@@ -1,69 +1,86 @@
-import Image from "next/image";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <Header active={null} />
+
+      <section className="hero">
+        <svg
+          className="hero-branches"
+          viewBox="0 0 340 340"
+          aria-hidden="true"
+        >
+          <path
+            d="M300 10 C 260 60, 250 90, 220 130 C 200 158, 190 190, 195 230"
+            fill="none"
+            stroke="#9CB176"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+            opacity="0.5"
+          />
+          <path
+            d="M270 20 C 245 70, 220 100, 210 150 C 203 182, 210 210, 200 250"
+            fill="none"
+            stroke="#8A7660"
+            strokeWidth="1.4"
+            strokeLinecap="round"
+            opacity="0.4"
+          />
+          <path
+            d="M320 40 C 300 90, 280 120, 260 170 C 248 198, 250 225, 240 260"
+            fill="none"
+            stroke="#D9A94E"
+            strokeWidth="1.2"
+            strokeLinecap="round"
+            opacity="0.4"
+          />
+        </svg>
+        <div className="eyebrow">
+          SINGAPORE — 個人事業主のためのIT相談窓口
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
+        <h1>
+          ちょっとしたITの相談、
+          <br />
+          ひとりで抱えていませんか。
+        </h1>
+        <p className="lead">
+          Willoaは、シンガポールを拠点に、個人事業主・小規模事業者のITまわりを支える相談窓口です。
+        </p>
+        <div className="hero-actions">
+          <a className="cta-btn" href="#contact">
+            ちょっと聞いてみる
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+          <a className="secondary" href="/about">
+            会社概要を見る →
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <div className="branch-wrap">
+        <section id="service" className="section is-active">
+          <div className="section-mark">
+            <div className="leaf-shape" aria-hidden="true" />
+          </div>
+          <span className="section-eyebrow">SERVICE</span>
+          <h2>サービス内容</h2>
+          <p>準備中です。近日中に詳しい内容を掲載します。</p>
+        </section>
+
+        <section id="contact" className="section">
+          <div className="section-mark">
+            <div className="leaf-shape" aria-hidden="true" />
+          </div>
+          <span className="section-eyebrow">CONTACT</span>
+          <h2>連絡先</h2>
+          <div className="contact-box">
+            <p>準備中です。近日中にお問い合わせ方法を掲載します。</p>
+          </div>
+        </section>
+      </div>
+
+      <Footer />
+    </>
   );
 }
