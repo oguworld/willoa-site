@@ -78,6 +78,43 @@ export default function Home() {
         </svg>
         <div className="drift-leaf" id="driftLeaf" />
 
+        <section className="section" id="about">
+          <span className="section-eyebrow">ABOUT</span>
+          <div className="section-mark">
+            <div className="leaf-shape" />
+          </div>
+          <h2>会社概要</h2>
+          <p>
+            企画・開発・運用のすべてを代表ひとりで担当しています。自分自身も個人事業主だからこそ、大きな業者には頼みにくい「ちょっとしたこと」に付き合えます。
+          </p>
+
+          <div className="facts">
+            <div>
+              拠点 <span>Singapore</span>
+            </div>
+            <div>
+              体制 <span>個人事業主として対応</span>
+            </div>
+            <div>
+              専門 <span>Web・IT周りの相談全般</span>
+            </div>
+          </div>
+
+          <p style={{ marginTop: 22 }}>
+            代表は、ITベンダーと事業会社の両方でIT管理に携わってきた経験があります。技術だけでなく、IT管理全般に幅広く触れてきました。大きな案件でなくても、「これ、どこに相談すればいいんだろう」くらいの段階で声をかけてもらえたら嬉しいです。
+          </p>
+
+          <div className="price-philosophy">
+            <div className="leaf-shape" aria-hidden="true" />
+            <p>
+              <strong>
+                AIによって、安く早くできることは大きく増えました。
+              </strong>
+              でも、それを実際に使いこなせるかどうかの差は、大企業よりも、個人事業主や小規模な組織のほうがずっと大きく残っています。Willoaは、その規模に特化して、AIをどう使うかを教える窓口でありたいと考えています。代わりに作業を引き受けることもできますが、それ以上に、使い方を身につけてもらうことを大事にしています。
+            </p>
+          </div>
+        </section>
+
         <section className="section" id="service">
           <span className="section-eyebrow">こんなことで困っていませんか</span>
           <div className="section-mark">
@@ -257,6 +294,15 @@ export default function Home() {
               デジタル・ITに関することなら、何でもお気軽にご連絡ください。
             </p>
           </div>
+        </section>
+
+        <section className="section" id="achievements">
+          <span className="section-eyebrow">ACHIEVEMENTS</span>
+          <div className="section-mark">
+            <div className="leaf-shape" />
+          </div>
+          <h2>実績</h2>
+          <p>準備中です。近日中に制作実績を掲載します。</p>
         </section>
 
         <section className="section" id="contact">
