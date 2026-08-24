@@ -65,6 +65,36 @@ pattern:
   `systemctl` needs to be run by the user directly in their own
   terminal, not by an agent in this session.
 
+## Email (info@willoa.net)
+
+Decided against a paid mailbox or self-hosting. Current setup:
+
+- **Cloudflare Email Routing** (dashboard → willoa.net → Email →
+  Email Routing) forwards `info@willoa.net` → `oguworld@gmail.com`.
+  Receiving only.
+- Replies go out from `oguworld@gmail.com` as-is — there is no
+  "send as info@willoa.net" capability. This was evaluated and
+  rejected at each option:
+  - Gmail's "Send mail as" for a non-Google-hosted custom domain
+    requires real SMTP relay credentials; Cloudflare Email Routing is
+    receive-only and has no SMTP submission service, so this doesn't
+    work with just Cloudflare.
+  - Microsoft 365 Family/Personal *can* do this via Outlook.com's
+    custom-domain feature, but the user's Office is a one-time
+    perpetual license, not an active subscription — not available.
+  - Zoho Mail's free custom-domain plan appears to no longer be
+    offered to new signups (confirmed live: only paid tiers shown,
+    cheapest ~S$1.66/user/month) — not pursued.
+  - Self-hosting a mail server on this VPS (Contabo) was considered
+    and is technically feasible (IP `194.233.82.43` is not currently
+    on Spamhaus/SpamCop), but rejected due to deliverability risk:
+    budget-VPS IP ranges are commonly flagged by receiving providers'
+    reputation systems independent of DNSBL status, which is an
+    unacceptable risk for inbound business inquiries.
+- If this needs revisiting, the cheapest reliable fix is a paid
+  mailbox with real SMTP (Zoho Mail Lite ~S$20/year, or similar) —
+  see the reasoning above before re-evaluating Microsoft/self-hosting.
+
 ## Repo
 
 GitHub: `oguworld/willoa-site` (private), default branch `main`. Git
