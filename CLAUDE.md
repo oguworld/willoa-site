@@ -23,11 +23,19 @@ null`) to highlight the current nav item.
 
 ## Pages
 
-- `/` — home. Hero is real copy; the `#service` and `#contact` sections
-  are placeholders ("準備中") because the client has only supplied the
-  About page content so far. Fill these in once real service/pricing/
-  contact copy is provided — do not invent pricing or contact details.
+- `/` — home. Full content ported from the client's landing mockup:
+  hero, pain-point list, three pricing tiers (`.plan-grid`) plus a
+  one-off task price list (`.service-card` / `.mini-price-row`), and
+  the contact section (`mailto:info@willoa.net`, `x.com/willoa_sg`).
+  The scroll-driven branch line animation (`ScrollBranch.tsx`) and
+  active-nav-on-scroll behavior are ported as a client component that
+  manipulates the DOM directly by id, matching the original vanilla JS
+  — this is intentional, not something to "fix" into React state.
 - `/about` — 会社概要, ported verbatim from the client's HTML mockup.
+
+Not yet built: the phone-mockup "showcase" section (`.showcase` /
+`.phone-*` classes exist in globals.css but no page uses them) — no
+case-study content has been provided for it yet.
 
 ## Production infra
 
@@ -65,10 +73,15 @@ matching `sg-weekend-app`.
 
 ## Open items
 
-- Service/pricing content and real contact details (email, X/Twitter,
-  etc.) are still needed to replace the placeholders on `/`.
-- The client's original mockup referenced additional sections (phone
-  mockup showcase, pain-point list, pricing plan grid) whose CSS is
-  already in `globals.css` but has no corresponding page content yet —
-  build these out once the copy arrives instead of re-deriving the
-  styles.
+- SEO/meta polish not yet done: still using the create-next-app
+  default favicon, no OGP image, no `sitemap.xml` / `robots.txt`, no
+  custom 404 page.
+- No analytics configured (GA4 or similar).
+- Contact is a `mailto:` link, not a form.
+- No legal pages (privacy policy, 特定商取引法に基づく表記) — worth
+  checking whether these are required given the fee-for-service
+  structure.
+- `public/*.svg` are unused create-next-app sample assets — safe to
+  delete.
+- Phone-mockup "showcase" section (see Pages above) — needs case-study
+  content before it can be built.
