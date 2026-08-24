@@ -9,6 +9,25 @@ export default function Home() {
       <ScrollBranch />
 
       <section className="hero">
+        <div className="hero-content">
+          <div className="eyebrow">
+            SINGAPORE — 個人事業主のためのIT相談窓口
+          </div>
+          <h1>
+            風にしなって、
+            <br />
+            折れない。
+          </h1>
+          <p className="lead">
+            AIによって、安く早くできることは大きく増えました。でも、どう使えばいいか分からない、という差が、個人事業主や小規模な組織ほど大きく残っています。Willoaは、その規模に特化して、AIの使い方そのものを教える窓口です。必要であれば、代わりに手を動かすこともします。小さな相談ほど、歓迎します。
+          </p>
+          <div className="hero-actions">
+            <a className="cta-btn" href="#contact">
+              ちょっと聞いてみる
+            </a>
+            <span className="secondary">info@willoa.net</span>
+          </div>
+        </div>
         <svg
           className="hero-branches"
           viewBox="0 0 340 340"
@@ -39,23 +58,6 @@ export default function Home() {
             opacity="0.4"
           />
         </svg>
-        <div className="eyebrow">
-          SINGAPORE — 個人事業主のためのIT相談窓口
-        </div>
-        <h1>
-          風にしなって、
-          <br />
-          折れない。
-        </h1>
-        <p className="lead">
-          AIによって、安く早くできることは大きく増えました。でも、どう使えばいいか分からない、という差が、個人事業主や小規模な組織ほど大きく残っています。Willoaは、その規模に特化して、AIの使い方そのものを教える窓口です。必要であれば、代わりに手を動かすこともします。小さな相談ほど、歓迎します。
-        </p>
-        <div className="hero-actions">
-          <a className="cta-btn" href="#contact">
-            ちょっと聞いてみる
-          </a>
-          <span className="secondary">info@willoa.net</span>
-        </div>
       </section>
 
       <div className="branch-wrap" id="route">
@@ -133,6 +135,74 @@ export default function Home() {
             <li>日本語で相談できる相手がいない</li>
           </ul>
 
+          <p className="service-secondary-intro">
+            ITのちょっとしたお困りごと、お手伝いします。
+          </p>
+          <div className="service-card" style={{ maxWidth: "none" }}>
+            <h3>ちょっとしたお願いごと</h3>
+            <p>
+              ホームページの修正から、アカウント整理、ちょっとした資料作りまで。「これくらいで頼んでいいのかな」ということほど歓迎です。
+            </p>
+            <ul>
+              <li>個人事業主・小規模店舗の社長向け</li>
+              <li>トラブル時の相談窓口としても対応</li>
+            </ul>
+            <div className="mini-price">
+              <div className="mini-price-row">
+                <span className="item">
+                  ホームページのちょっとした修正（テキスト・画像差し替えなど）
+                </span>
+                <span className="price">50ドル</span>
+              </div>
+              <div className="mini-price-row">
+                <span className="item">
+                  パソコン・メールの調子が悪いときの相談
+                </span>
+                <span className="price">50ドル</span>
+              </div>
+              <div className="mini-price-row">
+                <span className="item">
+                  Google / Microsoftアカウントの整理・設定
+                </span>
+                <span className="price">80ドル</span>
+              </div>
+              <div className="mini-price-row">
+                <span className="item">見積書・請求書のテンプレート作成</span>
+                <span className="price">100ドル</span>
+              </div>
+              <div className="mini-price-row">
+                <span className="item">
+                  クラウドのバックアップ・セキュリティ設定
+                </span>
+                <span className="price">100ドル</span>
+              </div>
+              <div className="mini-price-row">
+                <span className="item">
+                  業務用スプレッドシートの作成（自動計算など）
+                </span>
+                <span className="price">150ドル</span>
+              </div>
+              <div className="mini-price-row">
+                <span className="item">
+                  新しいツールの導入・初期設定サポート
+                </span>
+                <span className="price">150ドル</span>
+              </div>
+              <div className="mini-price-row">
+                <span className="item">
+                  月次保守プラン（月2件までの更新・修正＋稼働監視）
+                </span>
+                <span className="price">150ドル / 月</span>
+              </div>
+              <div className="mini-price-row">
+                <span className="item">
+                  サイト移行・大規模リニューアルなど大きめの案件
+                </span>
+                <span className="price">個別見積もり</span>
+              </div>
+            </div>
+          </div>
+
           <div className="price-philosophy">
             <div className="leaf-shape" aria-hidden="true" />
             <p>
@@ -143,6 +213,9 @@ export default function Home() {
             </p>
           </div>
 
+          <p className="service-secondary-intro">
+            定期的に相談したい方には、月額の相談サービスもあります。
+          </p>
           <div className="plan-grid">
             <div className="plan-card">
               <span className="plan-eyebrow">ライト</span>
@@ -219,74 +292,6 @@ export default function Home() {
           </div>
           <p className="plan-note">※ 内容は、実際にお話ししながら調整します。</p>
 
-          <p className="service-secondary-intro">
-            そのほか、こんな形でもお手伝いしています。
-          </p>
-          <div className="service-card" style={{ maxWidth: "none" }}>
-            <h3>ちょっとしたお願いごと</h3>
-            <p>
-              ホームページの修正から、アカウント整理、ちょっとした資料作りまで。「これくらいで頼んでいいのかな」ということほど歓迎です。
-            </p>
-            <ul>
-              <li>個人事業主・小規模店舗の社長向け</li>
-              <li>トラブル時の相談窓口としても対応</li>
-            </ul>
-            <div className="mini-price">
-              <div className="mini-price-row">
-                <span className="item">
-                  ホームページのちょっとした修正（テキスト・画像差し替えなど）
-                </span>
-                <span className="price">50ドル</span>
-              </div>
-              <div className="mini-price-row">
-                <span className="item">
-                  パソコン・メールの調子が悪いときの相談
-                </span>
-                <span className="price">50ドル</span>
-              </div>
-              <div className="mini-price-row">
-                <span className="item">
-                  Google / Microsoftアカウントの整理・設定
-                </span>
-                <span className="price">80ドル</span>
-              </div>
-              <div className="mini-price-row">
-                <span className="item">見積書・請求書のテンプレート作成</span>
-                <span className="price">100ドル</span>
-              </div>
-              <div className="mini-price-row">
-                <span className="item">
-                  クラウドのバックアップ・セキュリティ設定
-                </span>
-                <span className="price">100ドル</span>
-              </div>
-              <div className="mini-price-row">
-                <span className="item">
-                  業務用スプレッドシートの作成（自動計算など）
-                </span>
-                <span className="price">150ドル</span>
-              </div>
-              <div className="mini-price-row">
-                <span className="item">
-                  新しいツールの導入・初期設定サポート
-                </span>
-                <span className="price">150ドル</span>
-              </div>
-              <div className="mini-price-row">
-                <span className="item">
-                  月次保守プラン（月2件までの更新・修正＋稼働監視）
-                </span>
-                <span className="price">150ドル / 月</span>
-              </div>
-              <div className="mini-price-row">
-                <span className="item">
-                  サイト移行・大規模リニューアルなど大きめの案件
-                </span>
-                <span className="price">個別見積もり</span>
-              </div>
-            </div>
-          </div>
-
           <div className="price-philosophy">
             <div className="leaf-shape" aria-hidden="true" />
             <p>
@@ -318,6 +323,14 @@ export default function Home() {
             <div className="contact-actions">
               <a className="mail-btn" href="mailto:info@willoa.net">
                 ちょっと聞いてみる
+              </a>
+              <a
+                className="x-link"
+                href="https://wa.me/6589503457"
+                target="_blank"
+                rel="noopener"
+              >
+                WhatsApp: +65 8950 3457
               </a>
               <a
                 className="x-link"
