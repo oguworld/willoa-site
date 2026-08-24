@@ -19,6 +19,7 @@ export default function Header({ active = null }: { active?: NavKey }) {
           <Link
             key={item.key}
             href={item.href}
+            data-target={item.key ?? undefined}
             className={item.key === active ? "active" : undefined}
           >
             <span className="leaf" />
