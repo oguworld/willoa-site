@@ -251,7 +251,51 @@ export default function Home() {
             <div className="leaf-shape" />
           </div>
           <h2>実績</h2>
-          <p>準備中です。近日中に制作実績を掲載します。</p>
+          <p>Willoaが企画・開発・運用しているサービスの一例です。</p>
+          <div className="showcase">
+            <div className="phone">
+              <div className="phone-screen">
+                <div className="phone-topbar">
+                  おでかけ<span>Navi</span>
+                </div>
+                <div className="phone-cards">
+                  <div className="phone-card">
+                    <div className="thumb" />
+                    <div className="t1">週末のイベント情報</div>
+                    <div className="t2">毎週自動更新</div>
+                  </div>
+                  <div className="phone-card">
+                    <div className="thumb" />
+                    <div className="t1">探訪スタンプ帳</div>
+                    <div className="t2">スポットを巡って記録</div>
+                  </div>
+                </div>
+                <div className="phone-nav">
+                  <div className="item active">
+                    <div className="ic" />
+                    探す
+                  </div>
+                  <div className="item">
+                    <div className="ic" />
+                    スタンプ
+                  </div>
+                  <div className="item">
+                    <div className="ic" />
+                    予定
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="showcase-copy">
+              <h3>おでかけNavi</h3>
+              <p>
+                シンガポール在住の日本人向け週末おでかけ情報アプリ。企画・開発・AI連携・運用まで一貫して担当しています。
+              </p>
+              <a className="domain" href="/odekake-navi">
+                詳しく見る →
+              </a>
+            </div>
+          </div>
         </section>
 
         <section className="section" id="contact">

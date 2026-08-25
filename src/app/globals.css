@@ -387,6 +387,16 @@ button:focus-visible {
   flex: 1 1 260px;
   min-width: 240px;
 }
+.showcase-copy h3 {
+  font-family: var(--font-display), serif;
+  font-size: 19px;
+  margin: 0 0 10px;
+}
+.showcase-copy p {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin: 0 0 4px;
+}
 .showcase-copy .domain {
   display: inline-block;
   margin-top: 6px;
