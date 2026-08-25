@@ -754,7 +754,7 @@ footer {
   header {
     padding: 14px 16px;
   }
-  .section-nav {
+  nav.section-nav {
     display: none;
   }
   .hero {
