@@ -4,28 +4,28 @@ import { useState, type FormEvent } from "react";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
-const WEB3FORMS_ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
-
 export default function ContactForm() {
   const [status, setStatus] = useState<Status>("idle");
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (!WEB3FORMS_ACCESS_KEY) return;
-
     setStatus("submitting");
+
     const form = e.currentTarget;
     const formData = new FormData(form);
-    formData.append("access_key", WEB3FORMS_ACCESS_KEY);
-    formData.append("subject", "Willoaサイトからのお問い合わせ");
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("/api/feedback", {
         method: "POST",
-        body: formData,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       });
-      const data = await res.json();
-      if (data.success) {
+      if (res.ok) {
         setStatus("success");
         form.reset();
       } else {
@@ -34,14 +34,6 @@ export default function ContactForm() {
     } catch {
       setStatus("error");
     }
-  }
-
-  if (!WEB3FORMS_ACCESS_KEY) {
-    return (
-      <p className="form-note">
-        フォームは準備中です。お急ぎの場合はメールまたはWhatsAppでご連絡ください。
-      </p>
-    );
   }
 
   if (status === "success") {
@@ -60,12 +52,7 @@ export default function ContactForm() {
       </label>
       <label>
         メールアドレス
-        <input
-          type="email"
-          name="email"
-          required
-          autoComplete="email"
-        />
+        <input type="email" name="email" required autoComplete="email" />
       </label>
       <label>
         お問い合わせ内容

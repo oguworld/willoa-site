@@ -104,14 +104,26 @@ this repo is `oguworld` / `oguworld@gmail.com`, matching
 
 ## Contact form
 
-`src/components/ContactForm.tsx` (client component) posts to
-[Web3Forms](https://web3forms.com) — chosen because it needs no
-account/backend, just a free access key tied to an email. Reads
-`NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` from env; until that's set, it
-renders a fallback message pointing to email/WhatsApp instead of the
-form. **Still pending**: user needs to get a key from web3forms.com
-and give it to us to wire in (as an env var in the pm2/`.env.local`
-setup, then rebuild + `pm2 restart willoa`).
+`src/components/ContactForm.tsx` posts to this app's own
+`src/app/api/feedback/route.ts`, which pushes a message via the LINE
+Messaging API — same pattern as `sg-weekend-app`'s `/api/feedback`
+(`server.js`), which the user asked to match ("おでかけNaviと同じ
+形"). Uses the same LINE channel: `LINE_CHANNEL_ACCESS_TOKEN` and
+`LINE_USER_ID` were copied from `sg-weekend-app/.env` into this repo's
+`.env.local` (gitignored, not committed). Both apps' feedback lands in
+the same LINE thread; this app's messages are prefixed "Willoaサイト
+にお問い合わせが届きました" to distinguish them.
+
+An earlier version used Web3Forms (a third-party form-relay service)
+before this LINE-based approach replaced it — don't reintroduce it,
+this is simpler and needs no external account.
+
+If `.env.local` is ever lost, regenerate it with:
+```
+grep -E "^LINE_CHANNEL_ACCESS_TOKEN=|^LINE_USER_ID=" \
+  /home/masahiko/sg-weekend-app/.env > .env.local
+```
+then `npm run build && pm2 restart willoa --update-env`.
 
 ## Open items
 
