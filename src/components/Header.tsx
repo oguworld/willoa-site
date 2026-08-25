@@ -13,11 +13,7 @@ export default function Header({ active = null }: { active?: NavKey }) {
   return (
     <header>
       <Link href="/" className="logo">
-        <span className="logo-mark" aria-hidden="true">
-          <span className="logo-leaf logo-leaf-1" />
-          <span className="logo-leaf logo-leaf-2" />
-        </span>
-        WILL<span className="logo-accent">OA</span>
+        WILL<span>OA</span>
       </Link>
       <nav className="section-nav">
         {navItems.map((item) => (

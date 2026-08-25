@@ -53,40 +53,14 @@ header {
   border-bottom: 1px solid var(--rule);
 }
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 9px;
   font-family: var(--font-display), serif;
   font-weight: 800;
   font-size: 21px;
   letter-spacing: 0.06em;
   text-decoration: none;
 }
-.logo-accent {
+.logo span {
   color: var(--willow-deep);
-}
-.logo-mark {
-  position: relative;
-  width: 22px;
-  height: 22px;
-  flex: none;
-}
-.logo-leaf {
-  position: absolute;
-  top: 4px;
-  width: 15px;
-  height: 15px;
-  border-radius: 0 60% 60% 60%;
-  transform: rotate(-45deg);
-}
-.logo-leaf-1 {
-  left: 0;
-  background: var(--willow-deep);
-}
-.logo-leaf-2 {
-  left: 7px;
-  background: var(--gold);
-  opacity: 0.9;
 }
 nav.section-nav {
   display: flex;
