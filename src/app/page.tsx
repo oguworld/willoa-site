@@ -62,29 +62,10 @@ export default function Home() {
       </section>
 
       <div className="branch-wrap" id="route">
-        <svg
-          className="branch-svg"
-          viewBox="0 0 60 1400"
-          preserveAspectRatio="none"
-          id="branchSvg"
-        >
-          <path
-            className="branch-path"
-            id="branchPath"
-            d="M20 0 C 40 120, 5 240, 22 360 C 38 470, 8 590, 20 700 C 32 800, 6 900, 20 1000 C 34 1090, 10 1200, 20 1400"
-          />
-          <path
-            className="branch-path-fill"
-            id="branchPathFill"
-            d="M20 0 C 40 120, 5 240, 22 360 C 38 470, 8 590, 20 700 C 32 800, 6 900, 20 1000 C 34 1090, 10 1200, 20 1400"
-          />
-        </svg>
-        <div className="drift-leaf" id="driftLeaf" />
-
         <section className="section" id="about">
-          <span className="section-eyebrow">ABOUT</span>
-          <div className="section-mark">
-            <div className="leaf-shape" />
+          <div className="section-eyebrow">
+            <span className="leaf-shape" aria-hidden="true" />
+            ABOUT
           </div>
           <h2>会社概要</h2>
           <p>
@@ -109,9 +90,9 @@ export default function Home() {
         </section>
 
         <section className="section" id="service">
-          <span className="section-eyebrow">こんなことで困っていませんか</span>
-          <div className="section-mark">
-            <div className="leaf-shape" />
+          <div className="section-eyebrow">
+            <span className="leaf-shape" aria-hidden="true" />
+            こんなことで困っていませんか
           </div>
           <h2>
             こんなお困りごと、
@@ -230,9 +211,9 @@ export default function Home() {
         </section>
 
         <section className="section" id="achievements">
-          <span className="section-eyebrow">ACHIEVEMENTS</span>
-          <div className="section-mark">
-            <div className="leaf-shape" />
+          <div className="section-eyebrow">
+            <span className="leaf-shape" aria-hidden="true" />
+            ACHIEVEMENTS
           </div>
           <h2>実績</h2>
           <p>Willoaが企画・開発・運用しているサービスの一例です。</p>
@@ -283,9 +264,9 @@ export default function Home() {
         </section>
 
         <section className="section" id="contact">
-          <span className="section-eyebrow">連絡先</span>
-          <div className="section-mark">
-            <div className="leaf-shape" />
+          <div className="section-eyebrow">
+            <span className="leaf-shape" aria-hidden="true" />
+            連絡先
           </div>
           <h2>連絡先</h2>
           <div className="contact-box">
