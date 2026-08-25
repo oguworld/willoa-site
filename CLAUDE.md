@@ -97,9 +97,21 @@ Decided against a paid mailbox or self-hosting. Current setup:
 
 ## Repo
 
-GitHub: `oguworld/willoa-site` (private), default branch `main`. Git
-identity for commits in this repo is `oguworld` / `oguworld@gmail.com`,
-matching `sg-weekend-app`.
+GitHub: `oguworld/willoa-site` (**public**, deliberately — user asked
+to make it public), default branch `main`. Git identity for commits in
+this repo is `oguworld` / `oguworld@gmail.com`, matching
+`sg-weekend-app`.
+
+## Contact form
+
+`src/components/ContactForm.tsx` (client component) posts to
+[Web3Forms](https://web3forms.com) — chosen because it needs no
+account/backend, just a free access key tied to an email. Reads
+`NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` from env; until that's set, it
+renders a fallback message pointing to email/WhatsApp instead of the
+form. **Still pending**: user needs to get a key from web3forms.com
+and give it to us to wire in (as an env var in the pm2/`.env.local`
+setup, then rebuild + `pm2 restart willoa`).
 
 ## Open items
 
@@ -107,7 +119,6 @@ matching `sg-weekend-app`.
   default favicon, no OGP image, no `sitemap.xml` / `robots.txt`, no
   custom 404 page.
 - No analytics configured (GA4 or similar).
-- Contact is a `mailto:` link, not a form.
 - No legal pages (privacy policy, 特定商取引法に基づく表記) — worth
   checking whether these are required given the fee-for-service
   structure.
