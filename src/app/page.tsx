@@ -144,22 +144,6 @@ export default function Home() {
                 <span className="price">50ドル</span>
               </div>
               <div className="mini-price-row">
-                <span className="item">Googleアカウント整理・設定</span>
-                <span className="price">80ドル</span>
-              </div>
-              <div className="mini-price-row">
-                <span className="item">見積書・請求書テンプレート作成</span>
-                <span className="price">100ドル</span>
-              </div>
-              <div className="mini-price-row">
-                <span className="item">バックアップ・セキュリティ設定</span>
-                <span className="price">100ドル</span>
-              </div>
-              <div className="mini-price-row">
-                <span className="item">業務用スプレッドシート作成</span>
-                <span className="price">150ドル</span>
-              </div>
-              <div className="mini-price-row">
                 <span className="item">新規ツール導入サポート</span>
                 <span className="price">150ドル</span>
               </div>
