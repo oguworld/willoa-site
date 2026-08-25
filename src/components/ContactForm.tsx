@@ -63,7 +63,7 @@ export default function ContactForm() {
       </button>
       {status === "error" && (
         <p className="form-note">
-          送信に失敗しました。お手数ですがメールまたはWhatsAppでご連絡ください。
+          送信に失敗しました。お手数ですが info@willoa.net までメールでご連絡ください。
         </p>
       )}
     </form>

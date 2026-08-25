@@ -272,24 +272,6 @@ export default function Home() {
           <div className="contact-box">
             <p>ご相談・お見積もりは無料です。お気軽にどうぞ。</p>
             <ContactForm />
-            <div className="contact-actions">
-              <a
-                className="x-link"
-                href="https://wa.me/6589503457"
-                target="_blank"
-                rel="noopener"
-              >
-                WhatsApp: +65 8950 3457
-              </a>
-              <a
-                className="x-link"
-                href="https://x.com/willoa_sg"
-                target="_blank"
-                rel="noopener"
-              >
-                X: @willoa_sg
-              </a>
-            </div>
           </div>
         </section>
       </div>
