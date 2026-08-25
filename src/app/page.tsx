@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollBranch from "@/components/ScrollBranch";
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
             折れない。
           </h1>
           <p className="lead">
-            AIによって、安く早くできることは大きく増えました。でも、どう使えばいいか分からない、という差が、個人事業主や小規模な組織ほど大きく残っています。Willoaは、その規模に特化して、AIの使い方そのものを教える窓口です。必要であれば、代わりに手を動かすこともします。小さな相談ほど、歓迎します。
+            AIで安く早くできることは増えましたが、使いこなせるかは別問題。個人事業主・小規模組織に特化して、使い方をお教えします。必要なら代わりに手も動かします。
           </p>
           <div className="hero-actions">
             <a className="cta-btn" href="#contact">
@@ -87,7 +88,7 @@ export default function Home() {
           </div>
           <h2>会社概要</h2>
           <p>
-            企画・開発・運用のすべてを代表ひとりで担当しています。自分自身も個人事業主だからこそ、大きな業者には頼みにくい「ちょっとしたこと」に付き合えます。
+            企画・開発・運用まで代表ひとりで担当。自分も個人事業主だからこそ、大きな業者には頼みにくい「ちょっとしたこと」に付き合えます。
           </p>
 
           <div className="facts">
@@ -103,18 +104,8 @@ export default function Home() {
           </div>
 
           <p style={{ marginTop: 22 }}>
-            代表は、ITベンダーと事業会社の両方でIT管理に携わってきた経験があります。技術だけでなく、IT管理全般に幅広く触れてきました。大きな案件でなくても、「これ、どこに相談すればいいんだろう」くらいの段階で声をかけてもらえたら嬉しいです。
+            ITベンダー・事業会社の両方でIT管理に携わった経験があります。小さな段階からお気軽にどうぞ。
           </p>
-
-          <div className="price-philosophy">
-            <div className="leaf-shape" aria-hidden="true" />
-            <p>
-              <strong>
-                AIによって、安く早くできることは大きく増えました。
-              </strong>
-              でも、それを実際に使いこなせるかどうかの差は、大企業よりも、個人事業主や小規模な組織のほうがずっと大きく残っています。Willoaは、その規模に特化して、AIをどう使うかを教える窓口でありたいと考えています。代わりに作業を引き受けることもできますが、それ以上に、使い方を身につけてもらうことを大事にしています。
-            </p>
-          </div>
         </section>
 
         <section className="section" id="service">
@@ -141,76 +132,46 @@ export default function Home() {
           <div className="service-card" style={{ maxWidth: "none" }}>
             <h3>ちょっとしたお願いごと</h3>
             <p>
-              ホームページの修正から、アカウント整理、ちょっとした資料作りまで。「これくらいで頼んでいいのかな」ということほど歓迎です。
+              「これくらいで頼んでいいのかな」ということほど歓迎です。AI活用で工数を抑え、実費に近い価格でご提供します。
             </p>
-            <ul>
-              <li>個人事業主・小規模店舗の社長向け</li>
-              <li>トラブル時の相談窓口としても対応</li>
-            </ul>
             <div className="mini-price">
               <div className="mini-price-row">
-                <span className="item">
-                  ホームページのちょっとした修正（テキスト・画像差し替えなど）
-                </span>
+                <span className="item">ホームページの軽微な修正</span>
                 <span className="price">50ドル</span>
               </div>
               <div className="mini-price-row">
-                <span className="item">
-                  パソコン・メールの調子が悪いときの相談
-                </span>
+                <span className="item">PC・メールのトラブル相談</span>
                 <span className="price">50ドル</span>
               </div>
               <div className="mini-price-row">
-                <span className="item">
-                  Google / Microsoftアカウントの整理・設定
-                </span>
+                <span className="item">Googleアカウント整理・設定</span>
                 <span className="price">80ドル</span>
               </div>
               <div className="mini-price-row">
-                <span className="item">見積書・請求書のテンプレート作成</span>
+                <span className="item">見積書・請求書テンプレート作成</span>
                 <span className="price">100ドル</span>
               </div>
               <div className="mini-price-row">
-                <span className="item">
-                  クラウドのバックアップ・セキュリティ設定
-                </span>
+                <span className="item">バックアップ・セキュリティ設定</span>
                 <span className="price">100ドル</span>
               </div>
               <div className="mini-price-row">
-                <span className="item">
-                  業務用スプレッドシートの作成（自動計算など）
-                </span>
+                <span className="item">業務用スプレッドシート作成</span>
                 <span className="price">150ドル</span>
               </div>
               <div className="mini-price-row">
-                <span className="item">
-                  新しいツールの導入・初期設定サポート
-                </span>
+                <span className="item">新規ツール導入サポート</span>
                 <span className="price">150ドル</span>
               </div>
               <div className="mini-price-row">
-                <span className="item">
-                  月次保守プラン（月2件までの更新・修正＋稼働監視）
-                </span>
+                <span className="item">月次保守プラン（月2件まで）</span>
                 <span className="price">150ドル / 月</span>
               </div>
               <div className="mini-price-row">
-                <span className="item">
-                  サイト移行・大規模リニューアルなど大きめの案件
-                </span>
+                <span className="item">サイト移行・大規模案件</span>
                 <span className="price">個別見積もり</span>
               </div>
             </div>
-          </div>
-
-          <div className="price-philosophy">
-            <div className="leaf-shape" aria-hidden="true" />
-            <p>
-              <strong>
-                AIを駆使して対応しているので、価格は実際にかかる工数にほぼ近い金額です。
-              </strong>
-              余計なマージンを載せない分、格安でお引き受けできます。
-            </p>
           </div>
 
           <p className="service-secondary-intro">
@@ -229,11 +190,8 @@ export default function Home() {
               </div>
               <p>困った時にチャットで聞ける、一番身軽な形です。</p>
               <ul className="plan-list">
-                <li>
-                  チャットでの相談 月3件まで（1件のやり取りは自由・返信目安2〜3営業日）
-                </li>
-                <li>通話は必要な時にスポットで相談</li>
-                <li>気軽に試してみたい方向け</li>
+                <li>チャット相談 月3件（返信目安2〜3営業日）</li>
+                <li>通話は必要な時にスポットで</li>
               </ul>
               <span className="plan-time">対応目安時間: 約2時間/月</span>
               <a className="plan-cta-outline" href="#contact">
@@ -254,11 +212,8 @@ export default function Home() {
               </div>
               <p>定期的に相談したい方の、一番選ばれやすい形です。</p>
               <ul className="plan-list">
-                <li>
-                  チャット・メールでの相談 月5件まで（1件のやり取りは自由・返信目安1営業日）
-                </li>
-                <li>月1回、60分の面談（オンライン・対面どちらも可）</li>
-                <li>ツール選定・契約前のセカンドオピニオンにも</li>
+                <li>チャット・メール相談 月5件（返信目安1営業日）</li>
+                <li>月1回60分面談（オンライン/対面）</li>
               </ul>
               <span className="plan-time">対応目安時間: 約5時間/月</span>
               <a className="plan-cta" href="#contact">
@@ -278,11 +233,8 @@ export default function Home() {
               </div>
               <p>経営判断に近いところまで、継続的に伴走します。</p>
               <ul className="plan-list">
-                <li>
-                  チャット優先対応 月10件まで（1件のやり取りは自由・返信目安当日）
-                </li>
-                <li>月2回、60分の通話</li>
-                <li>ちょっとした実装作業も月内で対応</li>
+                <li>チャット優先対応 月10件（返信目安当日）</li>
+                <li>月2回60分の通話＋実装作業も対応</li>
               </ul>
               <span className="plan-time">対応目安時間: 約13時間/月</span>
               <a className="plan-cta-outline" href="#contact">
@@ -291,14 +243,6 @@ export default function Home() {
             </div>
           </div>
           <p className="plan-note">※ 内容は、実際にお話ししながら調整します。</p>
-
-          <div className="price-philosophy">
-            <div className="leaf-shape" aria-hidden="true" />
-            <p>
-              <strong>ここに載っていないことでも大丈夫です。</strong>
-              デジタル・ITに関することなら、何でもお気軽にご連絡ください。
-            </p>
-          </div>
         </section>
 
         <section className="section" id="achievements">
@@ -317,13 +261,9 @@ export default function Home() {
           </div>
           <h2>連絡先</h2>
           <div className="contact-box">
-            <p>
-              デジタル・ITに関することなら、何でもお引き受けします。まずは軽く聞いてみるだけでも大丈夫です。小さな相談ほど、歓迎します。ご相談・お見積もりは無料です。
-            </p>
+            <p>ご相談・お見積もりは無料です。お気軽にどうぞ。</p>
+            <ContactForm />
             <div className="contact-actions">
-              <a className="mail-btn" href="mailto:info@willoa.net">
-                ちょっと聞いてみる
-              </a>
               <a
                 className="x-link"
                 href="https://wa.me/6589503457"
