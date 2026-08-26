@@ -113,7 +113,10 @@ export default function Home() {
             <li>気付いた時に「ふっと」相談できる相手が欲しい</li>
           </ul>
 
-          <p className="service-secondary-intro">
+          <h3 className="service-group-title service-secondary-intro">
+            スポット対応
+          </h3>
+          <p style={{ marginTop: 8 }}>
             ITのちょっとしたお困りごと、お手伝いします。
           </p>
           <div className="service-card" style={{ maxWidth: "none" }}>
@@ -145,7 +148,10 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="service-secondary-intro">
+          <h3 className="service-group-title service-secondary-intro">
+            月額相談
+          </h3>
+          <p style={{ marginTop: 8 }}>
             定期的に相談したい方には、月額の相談サービスもあります。
           </p>
           <div className="plan-grid">

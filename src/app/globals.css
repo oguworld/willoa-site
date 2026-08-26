@@ -553,6 +553,13 @@ button:focus-visible {
 .service-secondary-intro {
   margin-top: 40px;
 }
+.service-group-title {
+  font-family: var(--font-display), serif;
+  font-weight: 700;
+  font-size: 19px;
+  color: var(--ink);
+  margin: 0;
+}
 
 .price-philosophy {
   display: flex;
