@@ -166,7 +166,7 @@ export default function Home() {
               </ul>
               <span className="plan-time">対応目安時間: 30分（初回のみ）</span>
               <a className="plan-cta-outline" href="#contact">
-                無料で話してみる
+                問い合わせる
               </a>
             </div>
 
@@ -187,7 +187,7 @@ export default function Home() {
               </ul>
               <span className="plan-time">対応目安時間: 約2時間/月</span>
               <a className="plan-cta-outline" href="#contact">
-                気軽に始める
+                問い合わせる
               </a>
             </div>
 
@@ -209,7 +209,7 @@ export default function Home() {
               </ul>
               <span className="plan-time">対応目安時間: 約5時間/月</span>
               <a className="plan-cta" href="#contact">
-                このプランで申し込む
+                問い合わせる
               </a>
             </div>
 
@@ -230,7 +230,7 @@ export default function Home() {
               </ul>
               <span className="plan-time">対応目安時間: 約13時間/月</span>
               <a className="plan-cta-outline" href="#contact">
-                がっつり相談したい
+                問い合わせる
               </a>
             </div>
           </div>
