@@ -15,12 +15,12 @@ export default function Home() {
             SINGAPORE — 海外でIT・事業に携わる方へ
           </div>
           <h1>
-            AI時代だからこそ、
+            ひとりで、
             <br />
-            人に話せる。
+            悩まない。
           </h1>
           <p className="lead">
-            「本社に聞ける人がいない」——海外でIT・事業に携わる、そんな孤独をふっと話せる相手に。
+            「本社に聞ける人がいない」——そんな孤独を感じた瞬間に、ふっと話せる相手に。
           </p>
           <div className="hero-actions">
             <a className="cta-btn" href="#contact">
@@ -97,7 +97,7 @@ export default function Home() {
         <section className="section" id="service">
           <div className="section-eyebrow">
             <span className="leaf-shape" aria-hidden="true" />
-            こんなことで困っていませんか
+            SERVICE
           </div>
           <h2>
             こんなお困りごと、
@@ -109,7 +109,7 @@ export default function Home() {
             <li>周りにITに詳しい人がいない</li>
             <li>本社に気軽に聞ける相手がいない</li>
             <li>ベンダーやコンサルに頼むには大げさで高い</li>
-            <li>気付いた時に「ふっと」相談できる相手が欲しい</li>
+            <li>気付いた時に、雑談感覚で聞ける相手がいない</li>
           </ul>
 
           <h3 className="service-group-title service-secondary-intro">
@@ -121,7 +121,7 @@ export default function Home() {
           <div className="service-card" style={{ maxWidth: "none" }}>
             <h3>ちょっとしたお願いごと</h3>
             <p>
-              「これくらいで頼んでいいのかな」ということほど歓迎です。AI活用で工数を抑え、実費に近い価格でご提供します。
+              「これくらいで頼んでいいのかな」ということほど歓迎です。実費に近い価格でご提供します。
             </p>
             <div className="mini-price">
               <div className="mini-price-row">
@@ -292,7 +292,7 @@ export default function Home() {
         <section className="section" id="contact">
           <div className="section-eyebrow">
             <span className="leaf-shape" aria-hidden="true" />
-            連絡先
+            CONTACT
           </div>
           <h2>連絡先</h2>
           <div className="contact-box">
