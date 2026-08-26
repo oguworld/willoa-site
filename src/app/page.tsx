@@ -150,6 +150,21 @@ export default function Home() {
           </p>
           <div className="plan-grid">
             <div className="plan-card">
+              <span className="plan-eyebrow">お試し</span>
+              <h3>まずは話してみる</h3>
+              <div className="plan-price">無料</div>
+              <p>初めての方はまず30分、無料でお話ししましょう。</p>
+              <ul className="plan-list">
+                <li>初回30分のオンライン相談</li>
+                <li>お困りごとのヒアリングのみ（勧誘なし）</li>
+              </ul>
+              <span className="plan-time">対応目安時間: 30分（初回のみ）</span>
+              <a className="plan-cta-outline" href="#contact">
+                無料で話してみる
+              </a>
+            </div>
+
+            <div className="plan-card">
               <span className="plan-eyebrow">ライト</span>
               <h3>まずはひとこと</h3>
               <div className="plan-price">
@@ -188,7 +203,7 @@ export default function Home() {
               </ul>
               <span className="plan-time">対応目安時間: 約5時間/月</span>
               <a className="plan-cta" href="#contact">
-                まずは30分、無料で話してみる
+                このプランで申し込む
               </a>
             </div>
 
