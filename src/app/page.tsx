@@ -15,9 +15,9 @@ export default function Home() {
             SINGAPORE — 海外でIT・事業に携わる方へ
           </div>
           <h1>
-            風にしなって、
+            AI時代だからこそ、
             <br />
-            折れない。
+            人に話せる。
           </h1>
           <p className="lead">
             「本社に聞ける人がいない」——海外でIT・事業に携わる、そんな孤独をふっと話せる相手に。
