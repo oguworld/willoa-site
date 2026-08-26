@@ -26,7 +26,6 @@ export default function Home() {
             <a className="cta-btn" href="#contact">
               ちょっと聞いてみる
             </a>
-            <span className="secondary">info@willoa.net</span>
           </div>
         </div>
         <svg
