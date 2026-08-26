@@ -67,7 +67,7 @@ export default function Home() {
             <span className="leaf-shape" aria-hidden="true" />
             ABOUT
           </div>
-          <h2>会社概要</h2>
+          <h2>事業概要</h2>
           <p>
             海外でIT・事業に携わっていると、ちょっとした技術的な悩みを誰に相談すればいいか分からない瞬間があります。周りに詳しい人がいない、ベンダーやコンサルに頼むには大げさ、でも気になったときにすぐ聞きたい。
           </p>

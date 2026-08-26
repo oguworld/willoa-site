@@ -21,9 +21,9 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Willoa — シンガポールの個人事業主のためのIT相談窓口",
+  title: "Willoa — 海外でIT・事業に携わる方の相談窓口",
   description:
-    "Willoaは、シンガポールを拠点に、個人事業主・小規模事業者のITまわりを支える相談窓口です。",
+    "Willoaは、シンガポールを拠点に、海外でIT・事業に携わる個人事業主・小規模事業者のちょっとした孤独に寄り添う相談窓口です。",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

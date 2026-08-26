@@ -3,7 +3,7 @@ import Link from "next/link";
 type NavKey = "about" | "service" | "achievements" | "contact" | null;
 
 const navItems: { key: NavKey; label: string; href: string }[] = [
-  { key: "about", label: "会社概要", href: "/#about" },
+  { key: "about", label: "事業概要", href: "/#about" },
   { key: "service", label: "サービス", href: "/#service" },
   { key: "achievements", label: "実績", href: "/#achievements" },
   { key: "contact", label: "問い合わせ", href: "/#contact" },
