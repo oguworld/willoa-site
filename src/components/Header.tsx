@@ -29,7 +29,7 @@ export default function Header({ active = null }: { active?: NavKey }) {
         ))}
       </nav>
       <Link className="cta-btn" href="/#contact">
-        ちょっと聞いてみる
+        お問い合わせ
       </Link>
     </header>
   );

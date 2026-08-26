@@ -24,7 +24,7 @@ export default function Home() {
           </p>
           <div className="hero-actions">
             <a className="cta-btn" href="#contact">
-              ちょっと聞いてみる
+              お問い合わせ
             </a>
           </div>
         </div>
