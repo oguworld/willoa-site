@@ -653,7 +653,8 @@ button:focus-visible {
   color: var(--paper);
   border-radius: 20px;
   padding: 36px 32px;
-  margin-top: 10px;
+  margin: 10px auto 0;
+  max-width: 560px;
 }
 .contact-box p {
   color: #c7d0c0;
