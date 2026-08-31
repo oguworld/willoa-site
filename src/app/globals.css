@@ -118,13 +118,16 @@ button:focus-visible {
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
+  background: var(--card);
+  padding: 100px 28px 70px;
+  overflow: hidden;
+}
+.hero-inner {
   display: flex;
   align-items: center;
   gap: 24px 48px;
-  padding: 100px 28px 70px;
   max-width: 1040px;
   margin: 0 auto;
-  overflow: hidden;
 }
 .hero-content {
   flex: 1 1 auto;
@@ -175,21 +178,19 @@ button:focus-visible {
   color: var(--ink-soft);
 }
 
-.branch-wrap {
-  position: relative;
-  max-width: 1040px;
-  margin: 0 auto;
-  padding: 20px 28px 120px;
-}
-
 .section {
   position: relative;
-  padding: 56px 0 0;
-  border-top: 1px solid var(--rule);
+  padding: 72px 28px;
 }
-.section:first-child {
-  padding-top: 0;
-  border-top: none;
+.section:nth-of-type(odd) {
+  background: var(--paper);
+}
+.section:nth-of-type(even) {
+  background: var(--card);
+}
+.section-inner {
+  max-width: 1040px;
+  margin: 0 auto;
 }
 
 .section-eyebrow {
@@ -206,7 +207,7 @@ button:focus-visible {
   width: 10px;
   height: 10px;
   flex: none;
-  background: var(--card);
+  background: var(--paper);
   border: 2px solid var(--rule);
   border-radius: 0 60% 60% 60%;
   transform: rotate(-45deg);
@@ -789,11 +790,8 @@ footer {
   .hero-branches {
     display: none;
   }
-  .branch-wrap {
-    padding: 10px 18px 90px;
-  }
   .section {
-    padding-top: 40px;
+    padding: 40px 18px;
   }
   .service-grid {
     grid-template-columns: 1fr;

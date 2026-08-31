@@ -10,58 +10,60 @@ export default function Home() {
       <ScrollBranch />
 
       <section className="hero">
-        <div className="hero-content">
-          <div className="eyebrow">
-            SINGAPORE — 海外でIT・事業に携わる方へ
+        <div className="hero-inner">
+          <div className="hero-content">
+            <div className="eyebrow">
+              SINGAPORE — 海外でIT・事業に携わる方へ
+            </div>
+            <h1>
+              ひとりで、
+              <br />
+              悩まない。
+            </h1>
+            <p className="lead">
+              「本社に聞ける人がいない」——そんな孤独を感じた瞬間に、ふっと話せる相手に。
+            </p>
+            <div className="hero-actions">
+              <a className="cta-btn" href="#contact">
+                お問い合わせ
+              </a>
+            </div>
           </div>
-          <h1>
-            ひとりで、
-            <br />
-            悩まない。
-          </h1>
-          <p className="lead">
-            「本社に聞ける人がいない」——そんな孤独を感じた瞬間に、ふっと話せる相手に。
-          </p>
-          <div className="hero-actions">
-            <a className="cta-btn" href="#contact">
-              お問い合わせ
-            </a>
-          </div>
+          <svg
+            className="hero-branches"
+            viewBox="0 0 340 340"
+            aria-hidden="true"
+          >
+            <path
+              d="M300 10 C 260 60, 250 90, 220 130 C 200 158, 190 190, 195 230"
+              fill="none"
+              stroke="#9CB176"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+              opacity="0.5"
+            />
+            <path
+              d="M270 20 C 245 70, 220 100, 210 150 C 203 182, 210 210, 200 250"
+              fill="none"
+              stroke="#8A7660"
+              strokeWidth="1.4"
+              strokeLinecap="round"
+              opacity="0.4"
+            />
+            <path
+              d="M320 40 C 300 90, 280 120, 260 170 C 248 198, 250 225, 240 260"
+              fill="none"
+              stroke="#D9A94E"
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              opacity="0.4"
+            />
+          </svg>
         </div>
-        <svg
-          className="hero-branches"
-          viewBox="0 0 340 340"
-          aria-hidden="true"
-        >
-          <path
-            d="M300 10 C 260 60, 250 90, 220 130 C 200 158, 190 190, 195 230"
-            fill="none"
-            stroke="#9CB176"
-            strokeWidth="1.6"
-            strokeLinecap="round"
-            opacity="0.5"
-          />
-          <path
-            d="M270 20 C 245 70, 220 100, 210 150 C 203 182, 210 210, 200 250"
-            fill="none"
-            stroke="#8A7660"
-            strokeWidth="1.4"
-            strokeLinecap="round"
-            opacity="0.4"
-          />
-          <path
-            d="M320 40 C 300 90, 280 120, 260 170 C 248 198, 250 225, 240 260"
-            fill="none"
-            stroke="#D9A94E"
-            strokeWidth="1.2"
-            strokeLinecap="round"
-            opacity="0.4"
-          />
-        </svg>
       </section>
 
-      <div className="branch-wrap" id="route">
-        <section className="section" id="about">
+      <section className="section" id="about">
+        <div className="section-inner">
           <div className="section-eyebrow">
             <span className="leaf-shape" aria-hidden="true" />
             ABOUT
@@ -92,9 +94,11 @@ export default function Home() {
           <p style={{ marginTop: 22 }}>
             具体的にどんなことができるか、次でご紹介します ↓
           </p>
-        </section>
+        </div>
+      </section>
 
-        <section className="section" id="service">
+      <section className="section" id="service">
+        <div className="section-inner">
           <div className="section-eyebrow">
             <span className="leaf-shape" aria-hidden="true" />
             SERVICE
@@ -234,9 +238,11 @@ export default function Home() {
             </div>
           </div>
           <p className="plan-note">※ 内容は、実際にお話ししながら調整します。</p>
-        </section>
+        </div>
+      </section>
 
-        <section className="section" id="achievements">
+      <section className="section" id="achievements">
+        <div className="section-inner">
           <div className="section-eyebrow">
             <span className="leaf-shape" aria-hidden="true" />
             ACHIEVEMENTS
@@ -287,9 +293,11 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="section" id="contact">
+      <section className="section" id="contact">
+        <div className="section-inner">
           <div className="section-eyebrow">
             <span className="leaf-shape" aria-hidden="true" />
             CONTACT
@@ -299,8 +307,8 @@ export default function Home() {
             <p>ご相談・お見積もりは無料です。お気軽にどうぞ。</p>
             <ContactForm />
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <Footer />
     </>
