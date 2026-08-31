@@ -23,19 +23,37 @@ null`) to highlight the current nav item.
 
 ## Pages
 
-- `/` — home. Full content ported from the client's landing mockup:
-  hero, pain-point list, three pricing tiers (`.plan-grid`) plus a
-  one-off task price list (`.service-card` / `.mini-price-row`), and
-  the contact section (`mailto:info@willoa.net`, `x.com/willoa_sg`).
-  The scroll-driven branch line animation (`ScrollBranch.tsx`) and
-  active-nav-on-scroll behavior are ported as a client component that
-  manipulates the DOM directly by id, matching the original vanilla JS
-  — this is intentional, not something to "fix" into React state.
-- `/about` — 会社概要, ported verbatim from the client's HTML mockup.
+- `/` — a single-page site (no separate `/about` route; everything is
+  scroll-anchored sections on the home page). Sections in order:
+  hero → `#about` (事業概要) → `#service` (pain-list, spot-task price
+  list, 4-tier `.plan-grid` including a free trial) → `#achievements`
+  (おでかけNavi showcase, links to `/odekake-navi`) → `#contact`
+  (`ContactForm`, no email/WhatsApp/X shown directly). Positioning is
+  about IT isolation for people working abroad ("ひとりで、悩まない"),
+  not "we teach you AI" — see git history if that framing drifts back,
+  it was deliberately corrected once already.
+- `/odekake-navi` + `/odekake-navi/privacy` — ported product page and
+  privacy policy for the sg-weekend-app / おでかけNavi mobile app,
+  because `about.dosuru.app` (which used to host them) was retired in
+  favor of redirecting here. Screenshots/icon are referenced directly
+  from `dosuru.app`, not duplicated into this repo's `public/`.
 
-Not yet built: the phone-mockup "showcase" section (`.showcase` /
-`.phone-*` classes exist in globals.css but no page uses them) — no
-case-study content has been provided for it yet.
+### Layout structure (full-bleed sections)
+
+Each `<section className="section">` spans the full viewport width
+with an alternating background (`:nth-of-type(odd)` = white,
+`:nth-of-type(even)` = `--card`); the actual content sits in a nested
+`.section-inner` (max-width 1160px, centered). Same pattern in the
+hero via `.hero-inner`. This replaced an earlier single shared
+`.branch-wrap` max-width container after two rounds of "the page
+doesn't use the screen width" feedback — first widening the container
+alone did nothing (text still capped ~560-580px, just left more dead
+margin), so text-heavy sections like `#about` also got a decorative
+branch-SVG accent on the right (mirrored copy of the hero's) to
+visually balance the empty side, same idea as the hero's
+text+decoration split. `ScrollBranch.tsx` only toggles `.is-active` /
+nav-highlight classes by querying `.section` — it does not depend on
+any wrapping element, so the section markup can be restructured freely.
 
 ## Production infra
 
@@ -64,6 +82,26 @@ pattern:
   Any command touching `/etc/nginx`, `/etc/letsencrypt`, or
   `systemctl` needs to be run by the user directly in their own
   terminal, not by an agent in this session.
+
+### Taking screenshots (headless Chromium works, but needs setup)
+
+Playwright's cached Chromium binaries exist under
+`~/.cache/ms-playwright/`, but they're missing shared libs (libatk,
+libcairo, libpango, libxkbcommon, libasound, etc.) that aren't
+installed system-wide and can't be via `apt install` without sudo.
+Fix: `apt-get download <pkg>` (no root needed, just writes a `.deb` to
+cwd) each missing lib, `dpkg-deb -x <pkg>.deb <dir>` to extract it
+without installing, then run Chromium with
+`LD_LIBRARY_PATH=<dir>/usr/lib/x86_64-linux-gnu`. Expect 2-3 rounds of
+this — extracting one batch reveals further transitive deps via `ldd
+... | grep "not found"` — repeat until the grep is empty. Also add
+`args: ['--no-sandbox']` to `chromium.launch()` (no user namespaces
+available here). Once launched, use `playwright-core` (not the full
+`playwright` package) with `executablePath` pointed at the cached
+binary. This is worth doing before claiming a layout/visual fix is
+correct — several past "fixes" in this project were wrong on the
+first attempt because they were reasoned about from CSS alone instead
+of actually screenshotted.
 
 ## Email (info@willoa.net)
 
@@ -136,5 +174,7 @@ then `npm run build && pm2 restart willoa --update-env`.
   structure.
 - `public/*.svg` are unused create-next-app sample assets — safe to
   delete.
-- Phone-mockup "showcase" section (see Pages above) — needs case-study
-  content before it can be built.
+- 実績 (`#achievements`) only has one case study (おでかけNavi) — add
+  more as they become available.
+- Founder stays anonymous by choice (no photo) — if a nickname/avatar
+  is decided later, wire it into the `#about` section.
