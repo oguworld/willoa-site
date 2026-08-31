@@ -170,7 +170,10 @@ export default function OdekakeNaviPage() {
       <section className={styles.ctaBottom}>
         <h2>今すぐ始めよう</h2>
         <p>無料でご利用いただけます。</p>
-        <a href="https://apps.apple.com/sg/app/%E3%81%8A%E3%81%A7%E3%81%8B%E3%81%91navi/id6787159354">
+        <a
+          href="https://apps.apple.com/sg/app/%E3%81%8A%E3%81%A7%E3%81%8B%E3%81%91navi/id6787159354"
+          style={{ display: "inline-block" }}
+        >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/ja-jp"
