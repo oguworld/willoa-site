@@ -147,7 +147,7 @@ button:focus-visible {
   margin: 0 auto;
   text-align: center;
 }
-.about-text p {
+.section .about-text p {
   max-width: none;
 }
 .eyebrow {
@@ -204,7 +204,7 @@ button:focus-visible {
 .section h2 {
   text-align: center;
 }
-.section-lead {
+.section .section-lead {
   max-width: 640px;
   margin: 0 auto 20px;
   text-align: center;
