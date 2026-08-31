@@ -69,31 +69,65 @@ export default function Home() {
             ABOUT
           </div>
           <h2>事業概要</h2>
-          <p>
-            海外でIT・事業に携わっていると、ちょっとした技術的な悩みを誰に相談すればいいか分からない瞬間があります。周りに詳しい人がいない、ベンダーやコンサルに頼むには大げさ、でも気になったときにすぐ聞きたい。
-          </p>
-          <p style={{ marginTop: 16 }}>
-            IT業界で20年以上の経験を活かして、そんな「ちょっとした孤独」に寄り添う相談相手でありたいと思っています。
-          </p>
-          <p style={{ marginTop: 16 }}>
-            AIでできることは増えましたが、だからこそ人が話を聞いてくれることに意味がある。雑談ベースで気軽に相談でき、必要なら最後は少し手を動かすところまでお付き合いします。
-          </p>
+          <div className="about-flex">
+            <div className="about-text">
+              <p>
+                海外でIT・事業に携わっていると、ちょっとした技術的な悩みを誰に相談すればいいか分からない瞬間があります。周りに詳しい人がいない、ベンダーやコンサルに頼むには大げさ、でも気になったときにすぐ聞きたい。
+              </p>
+              <p style={{ marginTop: 16 }}>
+                IT業界で20年以上の経験を活かして、そんな「ちょっとした孤独」に寄り添う相談相手でありたいと思っています。
+              </p>
+              <p style={{ marginTop: 16 }}>
+                AIでできることは増えましたが、だからこそ人が話を聞いてくれることに意味がある。雑談ベースで気軽に相談でき、必要なら最後は少し手を動かすところまでお付き合いします。
+              </p>
 
-          <div className="facts">
-            <div>
-              拠点 <span>Singapore</span>
+              <div className="facts">
+                <div>
+                  拠点 <span>Singapore</span>
+                </div>
+                <div>
+                  体制 <span>個人事業主として対応</span>
+                </div>
+                <div>
+                  経験 <span>IT業界20年以上</span>
+                </div>
+              </div>
+
+              <p style={{ marginTop: 22 }}>
+                具体的にどんなことができるか、次でご紹介します ↓
+              </p>
             </div>
-            <div>
-              体制 <span>個人事業主として対応</span>
-            </div>
-            <div>
-              経験 <span>IT業界20年以上</span>
-            </div>
+            <svg
+              className="about-branches"
+              viewBox="0 0 340 340"
+              aria-hidden="true"
+            >
+              <path
+                d="M300 10 C 260 60, 250 90, 220 130 C 200 158, 190 190, 195 230"
+                fill="none"
+                stroke="#9CB176"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                opacity="0.5"
+              />
+              <path
+                d="M270 20 C 245 70, 220 100, 210 150 C 203 182, 210 210, 200 250"
+                fill="none"
+                stroke="#8A7660"
+                strokeWidth="1.4"
+                strokeLinecap="round"
+                opacity="0.4"
+              />
+              <path
+                d="M320 40 C 300 90, 280 120, 260 170 C 248 198, 250 225, 240 260"
+                fill="none"
+                stroke="#D9A94E"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                opacity="0.4"
+              />
+            </svg>
           </div>
-
-          <p style={{ marginTop: 22 }}>
-            具体的にどんなことができるか、次でご紹介します ↓
-          </p>
         </div>
       </section>
 

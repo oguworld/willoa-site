@@ -126,7 +126,7 @@ button:focus-visible {
   display: flex;
   align-items: center;
   gap: 24px 48px;
-  max-width: 1040px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 .hero-content {
@@ -140,6 +140,26 @@ button:focus-visible {
   width: 340px;
   height: 340px;
   opacity: 0.7;
+  pointer-events: none;
+}
+
+.about-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px 48px;
+}
+.about-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.about-branches {
+  position: relative;
+  flex: none;
+  width: 280px;
+  height: 280px;
+  margin-top: 48px;
+  opacity: 0.55;
+  transform: scaleX(-1);
   pointer-events: none;
 }
 .eyebrow {
@@ -189,7 +209,7 @@ button:focus-visible {
   background: var(--card);
 }
 .section-inner {
-  max-width: 1040px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
@@ -774,6 +794,9 @@ footer {
   }
   .service-grid {
     grid-template-columns: 1fr;
+  }
+  .about-branches {
+    display: none;
   }
 }
 
