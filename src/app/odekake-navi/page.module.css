@@ -111,6 +111,18 @@
     0 24px 60px rgba(200, 128, 74, 0.18),
     0 8px 20px rgba(200, 128, 74, 0.1);
 }
+.promoImg {
+  width: 240px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow:
+    0 24px 60px rgba(200, 128, 74, 0.18),
+    0 8px 20px rgba(200, 128, 74, 0.1);
+}
+.promoImg img {
+  width: 100%;
+  display: block;
+}
 .phoneImgWrap {
   border-radius: 30px;
   overflow: hidden;
