@@ -248,14 +248,22 @@ export default function Home() {
             Willoaが企画・開発・運用しているサービスの一例です。
           </p>
           <div className="showcase">
-            <div className="phone">
-              <div className="phone-screen">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/screenshots/screen-achievements.png"
-                  alt="おでかけNaviの実際の画面（おでかけ情報一覧）"
-                />
-              </div>
+            <div className="showcase-gallery">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/screenshots/promo-1-intro.png"
+                alt="週末どうする？そう迷ったとき、すぐ開くアプリ"
+              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/screenshots/promo-2-news.png"
+                alt="暮らしのニュースを、毎日日本語で"
+              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/screenshots/promo-3-odekake.png"
+                alt="週末の予定が、毎週入ってくる"
+              />
             </div>
             <div className="showcase-copy">
               <h3>おでかけNavi</h3>
