@@ -45,11 +45,7 @@ export default function Home() {
             <div className="eyebrow">
               SINGAPORE — 海外でIT・事業に携わる方へ
             </div>
-            <h1>
-              ひとりで、
-              <br />
-              悩まない。
-            </h1>
+            <h1>ひとりで、悩まない。</h1>
             <p className="lead">
               「気軽に聞ける人がいない」——そんな孤独を感じた瞬間に、ふっと話せる相手に。
             </p>
@@ -105,11 +101,7 @@ export default function Home() {
             <span className="leaf-shape" aria-hidden="true" />
             SERVICE
           </div>
-          <h2>
-            こんなお困りごと、
-            <br />
-            ありませんか
-          </h2>
+          <h2>こんなお困りごと、ありませんか</h2>
           <p className="section-lead">
             小さなことでも構いません。まずは雑談程度でも歓迎です。
           </p>
@@ -120,7 +112,7 @@ export default function Home() {
             <li>気付いた時に、雑談感覚で聞ける相手がいない</li>
           </ul>
 
-          <h3 className="service-group-title service-secondary-intro">
+          <h3 className="service-group-title">
             スポット対応
           </h3>
           <p className="section-lead" style={{ marginTop: 8 }}>
@@ -155,7 +147,7 @@ export default function Home() {
             </div>
           </div>
 
-          <h3 className="service-group-title service-secondary-intro">
+          <h3 className="service-group-title">
             月額相談
           </h3>
           <p className="section-lead" style={{ marginTop: 8 }}>
