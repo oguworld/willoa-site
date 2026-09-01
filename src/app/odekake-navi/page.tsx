@@ -79,31 +79,40 @@ export default function OdekakeNaviPage() {
       <div className={styles.mockupWrap}>
         <div className={styles.mockupInner}>
           <div className={styles.mockupItem}>
-            <div className={styles.promoImg}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/screenshots/promo-1-intro.png"
-                alt="週末どうする？そう迷ったとき、すぐ開くアプリ"
-              />
+            <div className={styles.phone}>
+              <div className={styles.phoneImgWrap}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://dosuru.app/screenshots/screen-events.png?v=4"
+                  alt="イベントを探す"
+                />
+              </div>
             </div>
+            <div className={styles.mockupLabel}>イベントを探す</div>
           </div>
           <div className={styles.mockupItem}>
-            <div className={styles.promoImg}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/screenshots/promo-2-news.png"
-                alt="暮らしのニュースを、毎日日本語で"
-              />
+            <div className={styles.phone}>
+              <div className={styles.phoneImgWrap}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://dosuru.app/screenshots/screen-explore.png?v=1"
+                  alt="探訪スタンプ帳"
+                />
+              </div>
             </div>
+            <div className={styles.mockupLabel}>探訪スタンプ帳</div>
           </div>
           <div className={styles.mockupItem}>
-            <div className={styles.promoImg}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/screenshots/promo-3-odekake.png"
-                alt="週末の予定が、毎週入ってくる"
-              />
+            <div className={styles.phone}>
+              <div className={styles.phoneImgWrap}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://dosuru.app/screenshots/screen-schedule.png?v=2"
+                  alt="予定表で管理"
+                />
+              </div>
             </div>
+            <div className={styles.mockupLabel}>予定表で管理</div>
           </div>
         </div>
       </div>
