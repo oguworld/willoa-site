@@ -250,35 +250,11 @@ export default function Home() {
           <div className="showcase">
             <div className="phone">
               <div className="phone-screen">
-                <div className="phone-topbar">
-                  おでかけ<span>Navi</span>
-                </div>
-                <div className="phone-cards">
-                  <div className="phone-card">
-                    <div className="thumb" />
-                    <div className="t1">週末のイベント情報</div>
-                    <div className="t2">毎週自動更新</div>
-                  </div>
-                  <div className="phone-card">
-                    <div className="thumb" />
-                    <div className="t1">探訪スタンプ帳</div>
-                    <div className="t2">スポットを巡って記録</div>
-                  </div>
-                </div>
-                <div className="phone-nav">
-                  <div className="item active">
-                    <div className="ic" />
-                    探す
-                  </div>
-                  <div className="item">
-                    <div className="ic" />
-                    スタンプ
-                  </div>
-                  <div className="item">
-                    <div className="ic" />
-                    予定
-                  </div>
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/screenshots/screen-achievements.png"
+                  alt="おでかけNaviの実際の画面（おでかけ情報一覧）"
+                />
               </div>
             </div>
             <div className="showcase-copy">
